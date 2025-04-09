@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Yemeksepeti AI Restaurant Recommendation.",
+    "version": "1.0",
+    "description": "Ranking restaurans with Gemini.",
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://*.yemeksepeti.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "host_permissions": [
+      "https://*.yemeksepeti.com/*"
+    ]
+  }
+  

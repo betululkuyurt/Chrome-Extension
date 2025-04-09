@@ -34,7 +34,7 @@ document.getElementById('showRestaurants').addEventListener('click', function() 
 });
 
 function callGeminiAPI(restaurants) {
-  const api_key = "AIzaSyAw3Q1wXEXwQbmgXDtSReTeN5GNw8Oqo20";   
+  const api_key = "API_KEY";   
   // Show loading indicator
   let responseDiv = document.getElementById('geminiResponse');
   if (!responseDiv) {
